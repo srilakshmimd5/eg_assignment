@@ -1,0 +1,19 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+tmp/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore Ruby specific files
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
