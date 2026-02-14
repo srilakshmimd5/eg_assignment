@@ -145,5 +145,4 @@ ruby sensor_data_generator.rb
 # - test_data/edge_cases.csv
 ```
 For Project Architecture refer ARCHITECTURE.md
-For Project Software Development Specification refer SDS_V1.md
 ---
