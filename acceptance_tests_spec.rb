@@ -9,13 +9,13 @@ require 'rspec'
 # Or individually: require_relative './sensor_reading'
 # 
 # If your implementation is in lib/aquaculture, uncomment:
-# require_relative './lib/aquaculture'
+require_relative './lib/aquaculture'
 #
 # If your implementation is in root directory, uncomment:
-require_relative './sensor_reading'
-require_relative './salmon_profile'
-require_relative './tilapia_profile'
-require_relative './water_quality_checker'
+# require_relative './sensor_reading'
+# require_relative './salmon_profile'
+# require_relative './tilapia_profile'
+# require_relative './water_quality_checker'
 
 RSpec.describe 'Aquaculture Water Quality System - Acceptance Tests' do
   # These tests will work with any implementation that follows the interface
