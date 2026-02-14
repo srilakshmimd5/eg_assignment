@@ -9,9 +9,6 @@ class WaterQualityChecker
 
   # Check if a sensor reading is safe for this species
   # Returns array of alert messages (empty if all parameters are safe)
-  #
-  # @param reading [SensorReading] The sensor reading to check
-  # @return [Array<String>] Array of alert messages (empty if safe)
   def check(reading)
     @species_profile.validate(reading)
   end

@@ -12,13 +12,7 @@ class SensorReading
 
   attr_reader :temperature, :ph, :dissolved_oxygen
 
-  # Initialize with sensor measurements
   # Raises ArgumentError if any value is invalid
-  #
-  # @param temperature [Float] Temperature in degrees Celsius
-  # @param ph [Float] pH level (0-14 scale)
-  # @param dissolved_oxygen [Float] Dissolved oxygen in mg/L
-  # @raise ArgumentError if any parameter is outside valid range
   def initialize(temperature:, ph:, dissolved_oxygen:)
     validate_temperature!(temperature)
     validate_ph!(ph)
@@ -32,9 +26,6 @@ class SensorReading
   private
 
   # Validates temperature is within acceptable sensor range
-  #
-  # @param value [Numeric] Temperature value to validate
-  # @raise ArgumentError if temperature is invalid
   def validate_temperature!(value)
     return if value.is_a?(Numeric) && value >= TEMP_MIN && value <= TEMP_MAX
 
@@ -42,9 +33,6 @@ class SensorReading
   end
 
   # Validates pH is within acceptable range (0-14)
-  #
-  # @param value [Numeric] pH value to validate
-  # @raise ArgumentError if pH is invalid
   def validate_ph!(value)
     return if value.is_a?(Numeric) && value >= PH_MIN && value <= PH_MAX
 
@@ -52,9 +40,6 @@ class SensorReading
   end
 
   # Validates dissolved oxygen is non-negative
-  #
-  # @param value [Numeric] Dissolved oxygen value to validate
-  # @raise ArgumentError if dissolved oxygen is invalid
   def validate_dissolved_oxygen!(value)
     return if value.is_a?(Numeric) && value >= DO_MIN
 
