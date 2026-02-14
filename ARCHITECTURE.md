@@ -42,8 +42,9 @@ The system uses the **Strategy Pattern** to handle species-specific water qualit
 - ✅ Follows Open/Closed Principle (Open for extension, closed for modification)
 
 ---
- Project Structure
+## Project Structure
 
+```
 eg_assignment/
 ├── lib/
 │   └── aquaculture/
@@ -60,7 +61,7 @@ eg_assignment/
 ├── SOFTWARE_DESIGN_SPECIFICATION.md   # Detailed design documentation
 ├── Gemfile                            # Ruby dependencies
 └── Gemfile.lock                       # Locked dependency versions
-
+```
 ---
 
 ## 📊 Species Configuration

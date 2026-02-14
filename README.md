@@ -144,5 +144,5 @@ ruby sensor_data_generator.rb
 # - test_data/equipment_failures.csv
 # - test_data/edge_cases.csv
 ```
-For Project Architecture refer ARCHITECTURE.md
+For project architecture, see [ARCHITECTURE.md](ARCHITECTURE.md).
 ---
